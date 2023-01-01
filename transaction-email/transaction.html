@@ -34,7 +34,37 @@
 
         @media screen and (max-width: 599.98px) {}
 
-        @media screen and (max-width: 399.98px) {}
+        @media screen and (max-width: 399.98px) {
+            .one-column {
+                display: block!important;
+                Margin: 0 auto;
+                
+            }
+
+            .one-column .content {
+                padding-right: 0!important;
+            }
+
+            .one-column .content img {
+                width: 100%;
+                height: 100%;
+            }
+
+            .two-column {
+                display: block!important;
+                Margin: 0 auto;
+            }
+
+            .two-column .content {
+                padding-left: 0!important;
+            }
+
+            .two-column .content img {
+                width: 100%;
+                height: 100%;
+
+            }
+        }
 
         /* Custom Dark Mode Colors */
         :root {
@@ -327,12 +357,12 @@
                                                             style="padding:0;font-size:0;text-align: center;">
 
                                                             <!--[if (gte mso 9)|(IE)]>
-                                                           <table width="100%" style="border-spacing:0;" role="presentation">
-                                                           <tr>
-                                                           <td width="150" valign="top" style="padding: 0;">
-                                                        <![endif]-->
+                                                                <table width="100%" style="border-spacing:0;" role="presentation">
+                                                                <tr>
+                                                                <td width="150" valign="top" style="padding: 0;">
+                                                            <![endif]-->
 
-                                                            <table class="column"
+                                                            <table class="one-column"
                                                                 style="border-spacing:0;vertical-align:top;width:100%;width:150px;max-width:180px;display:inline-block;"
                                                                 role="presentation">
                                                                 <tr>
@@ -370,7 +400,7 @@
                                                         </td><td width="300" valign="top" style="padding: 0;">
                                                         <![endif]-->
 
-                                                            <table class="column"
+                                                            <table class="two-column"
                                                                 style="border-spacing:0;vertical-align:top;width:100%;width:150px;max-width:180px;display:inline-block;"
                                                                 role="presentation">
                                                                 <tr>
