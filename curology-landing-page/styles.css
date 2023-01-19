@@ -16,11 +16,15 @@ a {
 
 nav {
     width: 90%;
+    
     padding: 14px;
     margin: 0 auto;
     display: flex;
     /* justify-content: space-between; */
     align-items: center;
+
+    /* fixing for 1400+ */
+    /* max-width: 1400px; */
 }
 
 .logo {
@@ -61,6 +65,11 @@ nav {
 
 .hero-section {
     background-color: #f7f5e9;
+    
+
+    /* fixing for 1400+ */
+    /* margin: 0 auto;
+    max-width: 1400px; */
 }
 
 .hero-section .content {
@@ -170,6 +179,10 @@ nav {
 footer {
     background-color: #332E54;
     padding: 4rem 1.5rem 4rem;
+
+    /* fixing for 1400+ */
+    /* margin: 0 auto;
+    max-width: 1400px; */
 }
 
 footer h3 {
@@ -304,5 +317,26 @@ footer p {
 
     .start-trial-btn button {
         display: block;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    nav {
+        padding-left:10%;
+        padding-right: 10%;
+    }
+
+    .hero-col-one {
+        padding-left:15%;
+        
+    }
+
+    .background-hero-section {
+        padding-right: 15%;
+    }
+
+    footer {
+        padding-left:15%;
+        padding-right: 15%;
     }
 }
