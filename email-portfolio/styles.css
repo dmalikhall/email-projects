@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 body {
     background-color: #F8F8F8;
+    font-family: 'Merriweather', serif;
+
 }
 
 .container {
-    /* width: 80%;
-    margin: 0 auto; */
+    
     position: relative;
 
 }
@@ -57,18 +61,61 @@ nav .portfolio-btn i {
 }
 
 .hero-section {
-    background-image: url(/email-portfolio/images/drew-beamer-kUHfMW8awpE-unsplash\ \(1\).jpg);
+    background-image: url(/email-portfolio/images/leone-venter-VieM9BdZKFo-unsplash\ \(1\).jpg);
     background-size: cover;
+    background-position: center;
     height: 100vh;
-    position: relative;
+    margin: 0 auto;
 
 }
 
+
+
 .hero-section .the-content {
+    position: relative;
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+
+}
+
+
+.the-content .intro {
     position: absolute;
     top: 50%;
-    left: 50%;
+    left: 30%;
     transform: translate(-50%, -50%);
+    padding: 40px;
+}
+
+
+
+.intro .hello {
+    color: #f0a04b;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.intro .name {
+    color: #000;
+    font-size: 4rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+}
+
+.intro .job {
+    color: #f6c453;
+    font-size: 2rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+}
+
+.intro .description {
+    font-size: 1.2rem;
+    color: #183a1d;
+    letter-spacing: 1px;
 }
 
 
@@ -182,20 +229,6 @@ nav .portfolio-btn i {
 }
 
 
-/* @media screen and (min-width:600px) {
-    .skills-container {
-        width: 80%;
-        margin: 0 auto;
-    }
-    .skills {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 1rem;
-        width: 80%;
-        margin: 0 auto;
-    }
-
-} */
 
 @media screen and (max-width:800px) {
 
@@ -207,6 +240,33 @@ nav .portfolio-btn i {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    .intro .hello {
+        font-size: 1.5rem;
+    }
+    
+    .intro .name {
+        font-size: 4rem;
+    }
+    
+    .intro .job {
+
+        font-size: 1.875rem;
+
+    }
+    
+    .intro .description {
+        font-size: 1rem;
+
+    }
+
+
+
+}
+
+@media screen and (max-width:625px) {
+    .the-content .intro {
+        left: 50%;
+    }
 }
 
 @media screen and (max-width:425px) {
@@ -217,6 +277,10 @@ nav .portfolio-btn i {
 
     .projects-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+
+    .the-content .intro {
+        left: 50%;
     }
 
 }
