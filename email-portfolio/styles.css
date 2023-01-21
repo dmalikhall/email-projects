@@ -7,14 +7,23 @@
 
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #F8F8F8;
     font-family: 'Merriweather', serif;
 
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
-    
+
     position: relative;
 
 }
@@ -38,25 +47,24 @@ nav {
 
 }
 
-nav div {
+nav a {
     border: 1px solid black;
     border-radius: 8px;
     padding: 10px;
+    cursor: pointer;
 }
 
-nav .icon i {
-    font-size: 30px;
+nav a {
+    width: 50px;
+    text-align: center;
 }
 
-nav .home-btn i {
-    font-size: 30px;
+
+nav a:hover {
+    color: #f0a04b;
 }
 
-nav .skill-btn i {
-    font-size: 30px;
-}
-
-nav .portfolio-btn i {
+nav .link-btn i {
     font-size: 30px;
 }
 
@@ -124,13 +132,17 @@ nav .portfolio-btn i {
     padding-left: 15%;
     padding-right: 15%;
     padding-bottom: 60px;
+    background-color: #F8F8F8;
+
 
 }
+
 
 
 .skills {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
     gap: 1rem;
     max-width: 1000px;
     margin: 0 auto;
@@ -172,6 +184,61 @@ nav .portfolio-btn i {
     object-fit: cover;
 }
 
+.about-me-section {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    padding-top: 60px;
+}
+
+.image-paragraph-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+    margin: 0 auto;
+
+}
+
+.image-paragraph-container .my-image {
+    width: 50%;
+    height: 550px;
+}
+
+.image-paragraph-container .my-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.image-paragraph-container .paragraph {
+    width: 40%;
+}
+
+.image-paragraph-container .paragraph h3 {
+    color: #f6c453;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    font-weight: 300;
+}
+
+.image-paragraph-container .paragraph h1 {
+    color: #183a1d;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.image-paragraph-container .paragraph p {
+    color: #838383;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+    line-height: 1.8;
+}
+
 .portfoilio-section {
     padding-left: 15%;
     padding-right: 15%;
@@ -179,6 +246,8 @@ nav .portfolio-btn i {
     margin: 0 auto;
     padding-top: 60px;
     background-color: #fff;
+
+
 }
 
 .portfoilio-section h1 {
@@ -229,7 +298,35 @@ nav .portfolio-btn i {
     color: #838383;
 }
 
+@media screen and (max-width:1050px) {
+    .image-paragraph-container {
+        display: block;
+    }
 
+    .image-paragraph-container .my-image {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+
+        height: 375px;
+    }
+
+    .image-paragraph-container .my-image img {
+        object-fit: contain;
+        object-position: center;
+    }
+
+    .image-paragraph-container .paragraph {
+        width: 100%;
+        text-align: center;
+    }
+
+    .image-paragraph-container .paragraph h3 {
+        margin-top: 30px;
+    }
+
+
+}
 
 @media screen and (max-width:800px) {
 
@@ -244,17 +341,17 @@ nav .portfolio-btn i {
     .intro .hello {
         font-size: 1.5rem;
     }
-    
+
     .intro .name {
         font-size: 4rem;
     }
-    
+
     .intro .job {
 
         font-size: 1.875rem;
 
     }
-    
+
     .intro .description {
         font-size: 1rem;
 
@@ -282,6 +379,17 @@ nav .portfolio-btn i {
 
     .the-content .intro {
         left: 50%;
+    }
+
+    .image-paragraph-container .paragraph h1 {
+        font-size: 1.8rem;
+
+
+    }
+
+    .image-paragraph-container .paragraph p {
+        font-size: .975rem;
+
     }
 
 }
