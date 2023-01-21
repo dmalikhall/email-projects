@@ -298,6 +298,15 @@ nav .link-btn i {
     color: #838383;
 }
 
+footer {
+    padding-left: 15%;
+    padding-right: 15%;
+    padding-bottom: 60px;
+    margin: 0 auto;
+    padding-top: 60px;
+    background-color: #F8F8F8;
+}
+
 @media screen and (max-width:1050px) {
     .image-paragraph-container {
         display: block;
